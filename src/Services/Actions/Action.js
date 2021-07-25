@@ -1,20 +1,18 @@
-import {ADD_TO_CART} from '../constants'
+import { ADD_TO_CART ,REMOVE_TO_CART } from "../constants";
 
 export const addToCart = (data) => {
-    
-    return {
-        type : ADD_TO_CART ,
-        data : data
-    }
-}
+    console.log("Action", data)
+  return {
+    type: ADD_TO_CART,
+    data: data,
+  };
+};
 
-export const removeToCart = (data) =>{
-    return {
-        type : REMOVE_TO_CART,
-        data : data 
-    }
-}
+export const removeToCart = (data) => {
+  return {
+    type: REMOVE_TO_CART,
+    data: data,
+  };
+};
 
-
- 
-// data is come froms data ,api , react component 
+// data is come froms data ,api , react component

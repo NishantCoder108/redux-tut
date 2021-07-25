@@ -1,6 +1,7 @@
 import React from "react";
 import Hc from "./Home.module.css";
-const Home = () => {
+const Home = (props) => {
+  console.log("Props", props);
   return (
     <div>
       <h1> Hi, I am Home</h1>
@@ -19,7 +20,14 @@ const Home = () => {
           <div className={Hc.imgcart}>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.M5zTod2jHjvsUh2Oe5K5cQHaHa%26pid%3DApi&f=1" />
           </div>
-          <button>Add To Cart</button>
+          <button
+            onClick={() => {
+              props.addToCartHandler({ price: 1000, name: "iphone3" });
+            }}
+            // Here ,we click then this data spread in whole components
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
     </div>
