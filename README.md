@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+<!-- How Redux work? -->
+step1 :  make react app and then make three file, components,containers , services . in services folder ,three folder present 1.actions, 2. reducers ,3.constants.js
+
+step2 :  make home.js in components and import in containers and then app.js file for the wrapping of all components for the use of redux.
+
+>mapDispatchToProps  is Saving the data in store and mapStateToProps  is spreading the data to whole components.
+
 ### `npm start`
 
 Runs the app in the development mode.\

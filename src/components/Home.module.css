@@ -1,0 +1,54 @@
+.cart_wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 26vh;
+    margin: 30px;
+    padding: 21px;
+    align-items: flex-start;
+    border: 2px solid navy;
+    justify-content: space-evenly;
+}
+
+img {
+  width: 94px;
+  margin-left: 75px;
+}
+.text_wrapper {
+  font-size: 1.4rem;
+  font-family: cursive;
+}
+
+.imgcart {
+  padding-right: 82px;
+}
+button {
+  font-size: 1rem;
+  background: black;
+  color: white;
+  outline: red;
+  box-shadow: 1px 5px 3px 5px black;
+}
+
+
+.cart_num{
+    position: absolute;
+    right: 123px;
+    top: 130px;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 800px;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+}
+
+/* // span do not working in module.css directly , so you must give classname={cart_num} */
+.navimg{
+    position: relative;
+    z-index: -4;
+    left: 570px;
+    top: 31px;
+
+}
